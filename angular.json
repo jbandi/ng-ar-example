@@ -25,7 +25,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "vendor/three.min.js",
+              "vendor/ar.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -50,7 +53,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ar-example:build"
+            "browserTarget": "ar-example:build",
+            "ssl": true
           },
           "configurations": {
             "production": {
